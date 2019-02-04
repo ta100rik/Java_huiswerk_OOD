@@ -6,9 +6,8 @@ public class Main {
 			Klant k2 = new Klant("Arjan","veemkade 524","utrecht");
 			System.out.println(k1.getFullname());
 			Self_study les1 = new Self_study();
-			les1.forLoop();
-			les1.whileloop();
-			
-		
+			//les1.forLoop();
+			//les1.whileloop();
+			les1.optellen(174, 26);
 	}
 }
