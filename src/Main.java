@@ -9,9 +9,15 @@ public class Main {
 			//les1.forLoop();
 			//les1.whileloop();
 			//System.out.println(les1.random());
-			les1.sawLoop();
+//			les1.sawLoop();
 			//System.out.println(les1.totalLoop());
 			// This one below was a assignment in the lesson not self study
 			//les1.optellen(174, 26);
+			
+			Zwembad first_zwembad = new Zwembad(100,2.5,2.0);
+			System.out.println(first_zwembad.berekenenInhoud());
+			System.out.println(first_zwembad.toString());
+			
+			
 	}
 }
