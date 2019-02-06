@@ -1,7 +1,7 @@
 
 public class Voetbalclub {
-	int aantalGewonnen, aantalGelijk, aantalVerloren;
-	String clubName;
+	private int aantalGewonnen, aantalGelijk, aantalVerloren;
+	private String clubName;
 //	constructor
 	public Voetbalclub(String voetclub){
 		clubName = voetclub;
