@@ -18,6 +18,8 @@
 //    System.out.println("BEREKENDE INHOUD: " + z2.berekenenInhoud());
 //  }
 //}
+
+// assignment 2.B
 public class Main {
 	public static void main(String[] arg) {
 		Voetbalclub ajx = new Voetbalclub("Ajax      ");

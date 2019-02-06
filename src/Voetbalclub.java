@@ -6,9 +6,10 @@ public class Voetbalclub {
 	public Voetbalclub(String voetclub){
 		clubName = voetclub;
 	}
-	public String Voetbalclub() {
-		return clubName;
-	}
+	
+	public String toString(){
+		  return clubName +"      "+aantalGespeeld() + "  "+ getWon() + "  "+ getGelijk() + "  " + getVerloren() +"  "+ aantalPunten() ;  
+	}  
 //	getters
 	public int getWon() {
 		return aantalGewonnen;
@@ -31,5 +32,9 @@ public class Voetbalclub {
 
 	public int aantalGespeeld() {
 		return aantalGewonnen + aantalGelijk + aantalVerloren;
+	}
+	
+	public int aantalPunten(){
+		return (aantalGewonnen * 3) + (aantalGelijk * 1);
 	}
 }
