@@ -29,6 +29,7 @@ public class Persoon {
 			return false;
 		}
 	}
+	
 	public boolean verkoop(Game g, Persoon koper) {
 		Game game = g;
 		Double prijs = g.huidigeWaarde();
@@ -58,6 +59,16 @@ public class Persoon {
 			return bol;
 		}
 		
+	}
+	
+	public Game zoekGameOpNaam(String g) {
+		
+		for(int i = 0;i< mijnGames.size(); i++) {
+			 if(mijnGames.get(i).getNaam() == g) {
+				return mijnGames.get(i);
+			 }
+		}
+		return null;
 	}
 	public String toString() {
 		

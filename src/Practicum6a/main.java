@@ -26,5 +26,11 @@ public class main {
     System.out.println("p2 verkoopt g2 aan p3:"+(p2.verkoop(g2, p3) ? "" : " niet")+" gelukt");
     System.out.println("p2 verkoopt g1 aan p1:"+(p2.verkoop(g1, p1) ? "" : " niet")+" gelukt");
     System.out.println("\np1: " +p1+ "\n\np2: " +p2+ "\n\np3: " +p3+ "\n");
+    
+    Game game1 = p1.zoekGameOpNaam("Just Cause 3");
+    System.out.println("p1 heeft Just Cause 3 " + (game1 != null ? "wel!" : "niet!"));
+
+    Game game2 = p3.zoekGameOpNaam("Just Cause 3");
+    System.out.println("p3 heeft Just Cause 3 " + (game2 != null ? "wel!" : "niet!"));
   }
 }
