@@ -17,7 +17,7 @@ public class Persoon {
 		Double prijs = g.huidigeWaarde();
 		boolean bol = true;
 		for(int i = 0;i< mijnGames.size(); i++) {
-			 if(mijnGames.get(i).getNaam() == game.getNaam()) {
+			 if((mijnGames.get(i).getNaam()).equals(game.getNaam())) {
 				 bol = false;
 			 }
 		}
@@ -36,7 +36,7 @@ public class Persoon {
 //		boolean will turn on true if the current user has the game
 		boolean bol = false;
 		for(int i = 0;i< mijnGames.size(); i++) {
-			 if(mijnGames.get(i).getNaam() == game.getNaam()) {
+			 if((mijnGames.get(i).getNaam()).equals(game.getNaam())) {
 				 bol = true;
 			 }
 		}
@@ -64,7 +64,7 @@ public class Persoon {
 	public Game zoekGameOpNaam(String g) {
 		
 		for(int i = 0;i< mijnGames.size(); i++) {
-			 if(mijnGames.get(i).getNaam() == g) {
+			 if((mijnGames.get(i).getNaam()).equals(g)) {
 				return mijnGames.get(i);
 			 }
 		}
